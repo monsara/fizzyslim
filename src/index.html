@@ -4,129 +4,565 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Kassa</title>
+    <title>Fizzyslim</title>
+
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
 
-  <body class="page">
-    <div class="page__wrapper">
+  <body class="page page__wrapper show-modal">
+    <div class="page__container page__content">
       <main class="main-content page__maine-content">
         <h1 class="visually-hidden">Kassa main page</h1>
 
-        <section class="products">
-          <div class="products__wrapper">
-            <div class="products__container">
-              <div class="products__content">
-                <h2 class="products__title">Kassa</h2>
+        <section class="products products__wrapper page__products">
+          <div class="products__content products__container container">
+            <h2 class="products__title section-title">Cassa</h2>
 
-                <ul class="products__list">
-                  <li class="products__item">
-                    <div class="product">
-                      <div class="product__container">
-                        <div class="product__content">
-                          <header class="product__header">
-                            <h3 class="product__name">Pineapple</h3>
+            <ul class="products__list list">
+              <li class="products__item">
+                <div class="product product__container product__content">
+                  <h3 class="product__name">Pineapple</h3>
 
-                            <img
-                              src=""
-                              alt="Product 1"
-                              class="product__image"
-                            />
-                          </header>
+                  <img
+                    src="./images/products/pineapple-fullview.png"
+                    alt="Offerta fizzyslim con sapore di Pineapple"
+                    width="179"
+                    height="299"
+                    class="product__image image"
+                  />
 
-                          <div class="product__body">
-                            <div class="product__offer">
-                              <p class="product__offer-text">
-                                Offerta limitata -50%
-                              </p>
+                  <hr class="product__divider" />
 
-                              <p class="product__offer-price">
-                                <span class="product__offer-price-value"
-                                  >$8.50</span
-                                >
-                                <span
-                                  class="product__offer-price-value product__offer-price-value_old"
-                                  >19.00$</span
-                                >
-                              </p>
-                            </div>
+                  <div class="product__offer">
+                    <p class="product__offer-text">
+                      Offerta limitata -50%
+                    </p>
 
-                            <ul class="product__quantity-list">
-                              <li class="product__quantity-item">1</li>
-                              <li class="product__quantity-item">2</li>
-                              <li class="product__quantity-item">3</li>
-                              <li class="product__quantity-item">4</li>
-                              <li class="product__quantity-item">5</li>
-                              <li class="product__quantity-item">6</li>
-                              <li class="product__quantity-item">7</li>
-                              <li class="product__quantity-item">8</li>
-                              <li class="product__quantity-item">9</li>
-                              <li class="product__quantity-item">10</li>
-                              <li class="product__quantity-item">11</li>
-                              <li class="product__quantity-item">12</li>
-                              <li class="product__quantity-item">13</li>
-                              <li class="product__quantity-item">14</li>
-                              <li class="product__quantity-item">15</li>
-                              <li class="product__quantity-item">16</li>
-                              <li class="product__quantity-item">17</li>
-                              <li class="product__quantity-item">18</li>
-                              <li class="product__quantity-item">19</li>
-                              <li class="product__quantity-item">20</li>
-                              <li class="product__quantity-item">21</li>
-                              <li class="product__quantity-item">22</li>
-                              <li class="product__quantity-item">23</li>
-                              <li class="product__quantity-item">24</li>
-                              <li class="product__quantity-item">25</li>
-                              <li class="product__quantity-item">26</li>
-                              <li class="product__quantity-item">27</li>
-                              <li class="product__quantity-item">28</li>
-                              <li class="product__quantity-item">29</li>
-                              <li class="product__quantity-item">30</li>
-                              <li class="product__quantity-item">31</li>
-                              <li class="product__quantity-item">32</li>
-                              <li class="product__quantity-item">33</li>
-                              <li class="product__quantity-item">34</li>
-                              <li class="product__quantity-item">35</li>
-                              <li class="product__quantity-item">36</li>
-                              <li class="product__quantity-item">37</li>
-                              <li class="product__quantity-item">38</li>
-                              <li class="product__quantity-item">39</li>
-                              <li class="product__quantity-item">40</li>
-                              <li class="product__quantity-item">41</li>
-                              <li class="product__quantity-item">42</li>
-                              <li class="product__quantity-item">43</li>
-                              <li class="product__quantity-item">44</li>
-                              <li class="product__quantity-item">45</li>
-                              <li class="product__quantity-item">46</li>
-                              <li class="product__quantity-item">47</li>
-                              <li class="product__quantity-item">48</li>
-                              <li class="product__quantity-item">49</li>
-                              <li class="product__quantity-item">50</li>
-                            </ul>
+                    <p class="product__offer-price">
+                      <span class="product__offer-price-value">$8.50</span>
+                      <span
+                        class="product__offer-price-value product__offer-price-value_old"
+                        >19.00$</span
+                      >
+                    </p>
+                  </div>
 
-                            <button
-                              class="product__button visually-hidden"
-                              type="submit"
-                              data-action="add-to-cart"
-                            >
-                              Add to cart
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  <div class="product__actions product-actions">
+                    <form
+                      action=""
+                      class="product-actions__form product-actions__form-content"
+                    >
+                      <select
+                        class="product-actions__quantity-select styler"
+                        data-visible-options="4"
+                        data-smart-positioning="-1"
+                      >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                        <option>34</option>
+                        <option>35</option>
+                        <option>36</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                        <option>47</option>
+                        <option>48</option>
+                        <option>49</option>
+                        <option>50</option>
+                      </select>
+
+                      <button
+                        class="product-actions__button button button_actions"
+                        type="submit"
+                        data-action="add-to-cart"
+                      >
+                        <span class="visually-hidden">Add to cart</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item">
+                <div class="product product__container product__content">
+                  <h3 class="product__name">Berries</h3>
+
+                  <img
+                    src="./images/products/berries-fullview.png"
+                    alt="Offerta fizzyslim con sapore di Berries"
+                    width="179"
+                    height="299"
+                    class="product__image image"
+                  />
+
+                  <hr class="product__divider" />
+
+                  <div class="product__offer">
+                    <p class="product__offer-text">
+                      Offerta limitata -50%
+                    </p>
+
+                    <p class="product__offer-price">
+                      <span class="product__offer-price-value">$8.50</span>
+                      <span
+                        class="product__offer-price-value product__offer-price-value_old"
+                        >19.00$</span
+                      >
+                    </p>
+                  </div>
+
+                  <div class="product__actions product-actions">
+                    <form
+                      action=""
+                      class="product-actions__form product-actions__form-content"
+                    >
+                      <select
+                        class="product-actions__quantity-select styler"
+                        data-visible-options="4"
+                        data-smart-positioning="-1"
+                      >
+                        <option>3</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                        <option>34</option>
+                        <option>35</option>
+                        <option>36</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                        <option>47</option>
+                        <option>48</option>
+                        <option>49</option>
+                        <option>50</option>
+                      </select>
+
+                      <button
+                        class="product-actions__button button button_actions"
+                        type="submit"
+                        data-action="add-to-cart"
+                      >
+                        <span class="visually-hidden">Add to cart</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item">
+                <div class="product product__container product__content">
+                  <h3 class="product__name">Grapefruit</h3>
+
+                  <img
+                    src="./images/products/grapefruit-fullview.png"
+                    alt="Offerta fizzyslim con sapore di Grapefruit"
+                    width="179"
+                    height="299"
+                    class="product__image image"
+                  />
+
+                  <hr class="product__divider" />
+
+                  <div class="product__offer">
+                    <p class="product__offer-text">
+                      Offerta limitata -50%
+                    </p>
+
+                    <p class="product__offer-price">
+                      <span class="product__offer-price-value">$8.50</span>
+                      <span
+                        class="product__offer-price-value product__offer-price-value_old"
+                        >19.00$</span
+                      >
+                    </p>
+                  </div>
+
+                  <div class="product__actions product-actions">
+                    <form
+                      action=""
+                      class="product-actions__form product-actions__form-content"
+                    >
+                      <select
+                        class="product-actions__quantity-select styler"
+                        data-visible-options="4"
+                        data-smart-positioning="-1"
+                      >
+                        <option>3</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                        <option>34</option>
+                        <option>35</option>
+                        <option>36</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                        <option>47</option>
+                        <option>48</option>
+                        <option>49</option>
+                        <option>50</option>
+                      </select>
+
+                      <button
+                        class="product-actions__button button button_actions"
+                        type="submit"
+                        data-action="add-to-cart"
+                      >
+                        <span class="visually-hidden">Add to cart</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+
+              <li class="products__item">
+                <div class="product product__container product__content">
+                  <h3 class="product__name">Apple</h3>
+
+                  <img
+                    src="./images/products/apple-fullview.png"
+                    alt="Offerta fizzyslim con sapore di Apple"
+                    width="179"
+                    height="299"
+                    class="product__image image"
+                  />
+
+                  <hr class="product__divider" />
+
+                  <div class="product__offer">
+                    <p class="product__offer-text">
+                      Offerta limitata -50%
+                    </p>
+
+                    <p class="product__offer-price">
+                      <span class="product__offer-price-value">$8.50</span>
+                      <span
+                        class="product__offer-price-value product__offer-price-value_old"
+                        >19.00$</span
+                      >
+                    </p>
+                  </div>
+
+                  <div class="product__actions product-actions">
+                    <form
+                      action=""
+                      class="product-actions__form product-actions__form-content"
+                    >
+                      <select
+                        class="product-actions__quantity-select styler"
+                        data-visible-options="4"
+                        data-smart-positioning="-1"
+                      >
+                        <option>3</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                        <option>34</option>
+                        <option>35</option>
+                        <option>36</option>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                        <option>47</option>
+                        <option>48</option>
+                        <option>49</option>
+                        <option>50</option>
+                      </select>
+
+                      <button
+                        class="product-actions__button button button_actions"
+                        type="submit"
+                        data-action="add-to-cart"
+                      >
+                        <span class="visually-hidden">Add to cart</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
+
+      <div class="modal-backdrop page__modal-backdrop">
+        <div class="modal modal__content modal-backdrop__modal">
+          <form action="order-form modal__order-form">
+            <div class="order-form_back order-form-back">
+              <button
+                class="order-form-back__button order-form-back-button button"
+                type="submit"
+              >
+                <span class="order-form-back-button__icon">
+                  <img
+                    class="image"
+                    src="./images/order/back-arrow-icon.png"
+                    width="20"
+                    height="30"
+                    alt="Back arrow"
+                  />
+                </span>
+                <span class="order-form-back-button__text">Carello</span>
+              </button>
+            </div>
+
+            <div class="order-form__container">
+              <ul class="order-form__products-list list">
+                <li class="order-form__products-item">
+                  <div
+                    class="order-form__poduct order-form-product order-form-product__content"
+                  >
+                    <img
+                      class="order-form-product__image image"
+                      src="./images/order/apple-preview.png"
+                      alt="Offerta fizzyslim con sapore di Apple"
+                      width="63"
+                      height="113"
+                    />
+
+                    <div class="order-form-product__descr">
+                      <p class="order-form-product__name">
+                        Offerta<br />
+                        fizzyslim con sapore di<br />
+                        Apple
+                      </p>
+
+                      <p class="order-form__quantity">QTÀ: 3</p>
+
+                      <p class="order-form__single-price">€25.50</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="order-form__products-item">
+                  <div
+                    class="order-form__poduct order-form-product order-form-product__content"
+                  >
+                    <img
+                      class="order-form-product__image image"
+                      src="./images/order/berries-preview.png"
+                      alt="Offerta fizzyslim con sapore di Berries"
+                      width="63"
+                      height="113"
+                    />
+
+                    <div class="order-form-product__descr">
+                      <p class="order-form-product__name">
+                        Offerta<br />
+                        fizzyslim con sapore di<br />
+                        Berries
+                      </p>
+
+                      <p class="order-form__quantity">QTÀ: 3</p>
+
+                      <p class="order-form__single-price">€25.50</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="order-form__products-item">
+                  <div
+                    class="order-form__poduct order-form-product order-form-product__content"
+                  >
+                    <img
+                      class="order-form-product__image image"
+                      src="./images/order/grapefruit-preview.png"
+                      alt="Offerta fizzyslim con sapore di Grapefruit"
+                      width="63"
+                      height="112"
+                    />
+
+                    <div class="order-form-product__descr">
+                      <p class="order-form-product__name">
+                        Offerta<br />
+                        fizzyslim con sapore di<br />
+                        Grapefruit
+                      </p>
+
+                      <p class="order-form__quantity">QTÀ: 3</p>
+
+                      <p class="order-form__single-price">€25.50</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="order-form__subtotal">
+                <span class="order-form__subtotal-text">Subtotale</span>
+                <span class="order-form__subtotal-value">€455.00</span>
+              </div>
+
+              <div class="order-form__action order-form-action">
+                <button
+                  class="order-form-action__button order-form-action-button"
+                  type="submit"
+                >
+                  <span class="order-form-action-button__text"
+                    >Visualizza carrello</span
+                  >
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./js/jquery.formstyler.min.js"></script>
+      <!-- Сюда будет всталена ссылка на файл скриптов -->
+      <!-- inject:js -->
+      <!-- endinject -->
     </div>
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
   </body>
 </html>
