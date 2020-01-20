@@ -5,6 +5,7 @@
 .order-form-back__button {
   position: relative;
 
+  width: 100%;
   padding-top: 84px;
   padding-bottom: 67px;
 
@@ -14,9 +15,6 @@
 .order-form-back-button__text {
   display: inline-block;
 
-  margin-left: 148px;
-  margin-right: 151px;
-
   font-size: 60px;
   line-height: 1.2em;
   color: $white-color;
@@ -25,21 +23,28 @@
 .order-form-back-button__icon {
   position: absolute;
   top: 100px;
-  left: 57px;
+  left: 44px;
 
   display: inline-block;
   width: 20px;
   height: 30px;
 
-  background-image: url(../images/order/back-arrow-icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bg-image('../images/order/back-arrow-icon.png');
+
+  @media (min-width: 370px) {
+    left: 57px;
+  }
 }
 
 .order-form__container {
-  width: 348px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: 370px) {
+    width: 348px;
+    padding: 0;
+  }
 }
 
 .order-form__products-list {
@@ -95,19 +100,31 @@
 .order-form-product__name {
   margin-bottom: 12px;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2em;
+
+  @media (min-width: 470px) {
+    font-size: 18px;
+  }
 }
 
 .order-form__quantity {
   margin-bottom: 4px;
 
-  font-size: 24px;
+  font-size: 20px;
+
+  @media (min-width: 470px) {
+    font-size: 24px;
+  }
 }
 
 .order-form__single-price {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
+
+  @media (min-width: 470px) {
+    font-size: 24px;
+  }
 }
 
 .order-form__subtotal {
@@ -123,17 +140,23 @@
 
   &::after {
     position: absolute;
-    bottom: -26px;
-    left: -60px;
+
     z-index: 999;
 
     display: block;
-    width: 470px;
+    width: 100%;
     height: 1px;
 
     background: $light-gray-color;
 
     content: '';
+
+    @media (min-width: 470px) {
+      bottom: -26px;
+      left: -60px;
+
+      width: 470px;
+    }
   }
 }
 
@@ -147,10 +170,18 @@
 
 .order-form__subtotal-text {
   font-size: 30px;
+
+  @media (min-width: 470px) {
+    font-size: 24px;
+  }
 }
 
 .order-form__subtotal-value {
-  font-size: 48px;
+  font-size: 44px;
+
+  @media (min-width: 470px) {
+    font-size: 48px;
+  }
 }
 
 .order-form__action {
