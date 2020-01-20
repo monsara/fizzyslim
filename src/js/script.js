@@ -39,14 +39,12 @@ function handleModalBackdropClick(evt) {
 }
 
 function handleCloseModalBtnClick(evt) {
+  evt.preventDefault();
+
   const target = evt.target;
   const nodeName = target.nodeName;
 
-  if (nodeName !== 'BUTTON') return;
-
   handleCloseModal(nodeName);
-
-  evt.preventDefault();
 }
 
 function handleCloseModal() {
