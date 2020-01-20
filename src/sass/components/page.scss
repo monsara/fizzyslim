@@ -1,0 +1,36 @@
+.page__content {
+  font-family: $main-font-stack;
+  font-weight: normal;
+  font-style: normal;
+
+  color: $white-color;
+}
+
+.page__products {
+  padding-top: 156px;
+  padding-bottom: 156px;
+}
+
+.page.show-modal .page__modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+
+  // display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  transition: opacity 300ms ease-in;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.page.show-modal .modal-backdrop__modal {
+  display: block;
+  // transform: translateX(0);
+}

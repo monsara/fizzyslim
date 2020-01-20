@@ -1,0 +1,179 @@
+.order-form_back {
+  margin-bottom: 35px;
+}
+
+.order-form-back__button {
+  position: relative;
+
+  padding-top: 84px;
+  padding-bottom: 67px;
+
+  background-color: $secondary-accent-color;
+}
+
+.order-form-back-button__text {
+  display: inline-block;
+
+  margin-left: 148px;
+  margin-right: 151px;
+
+  font-size: 60px;
+  line-height: 1.2em;
+  color: $white-color;
+}
+
+.order-form-back-button__icon {
+  position: absolute;
+  top: 100px;
+  left: 57px;
+
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+
+  background-image: url(../images/order/back-arrow-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.order-form__container {
+  width: 348px;
+  margin: 0 auto;
+}
+
+.order-form__products-list {
+  margin-bottom: 60px;
+}
+
+.order-form__products-item {
+  position: relative;
+  margin-bottom: 57px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order-form__poduct {
+  display: flex;
+
+  &::after {
+    position: absolute;
+    bottom: -26px;
+    z-index: 999;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background: $light-gray-color;
+
+    content: '';
+  }
+}
+
+.order-form-product__content {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-style: normal;
+
+  color: $darck-gray-color;
+  text-transform: uppercase;
+}
+
+.order-form-product__image {
+  margin-right: 32px;
+}
+
+.order-form-product__name,
+.order-form__quantity,
+.order-form__single-price {
+  margin: 0;
+}
+
+.order-form-product__name {
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.order-form__quantity {
+  margin-bottom: 4px;
+
+  font-size: 24px;
+}
+
+.order-form__single-price {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.order-form__subtotal {
+  position: relative;
+
+  margin-bottom: 45px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+
+  color: $darck-gray-color;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    bottom: -26px;
+    left: -60px;
+    z-index: 999;
+
+    display: block;
+    width: 470px;
+    height: 1px;
+
+    background: $light-gray-color;
+
+    content: '';
+  }
+}
+
+.order-form__subtotal-text,
+.order-form__subtotal-value {
+  display: block;
+
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+.order-form__subtotal-text {
+  font-size: 30px;
+}
+
+.order-form__subtotal-value {
+  font-size: 48px;
+}
+
+.order-form__action {
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.order-form-action__button {
+  padding: 25px 0;
+  border-radius: 5px;
+
+  background: $secondary-accent-color;
+}
+
+.order-form-action-button__text {
+  margin: 0 55px;
+
+  font-family: 'Gilroy';
+  font-size: 18px;
+  line-height: 1.2px;
+  font-weight: 800;
+  font-style: normal;
+
+  color: $white-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  background: none;
+  user-select: none;
+  cursor: pointer;
+
+  &_actions {
+    border-radius: 23.5px;
+    vertical-align: middle;
+    transition: background 0.2s linear;
+
+    &:hover {
+      background-color: #ff8b24;
+    }
+
+    &::before {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      @include bg-image('../images/products/cart-icon.png');
+
+      content: '';
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.product__container {
+  width: 239px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bg-image(
+    '../images/products/offerbg_.png',
+    $size: contain,
+    $pos: bottom
+  );
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.product__name {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 36px;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.product__image {
+  display: inline-block;
+  margin-bottom: 36px;
+}
+
+.product__divider {
+  position: absolute;
+  top: 383px;
+  left: 0;
+
+  width: 100%;
+  height: 21px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: none;
+
+  @include bg-image('../images/products/board_.jpg');
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.product__offer {
+  margin-bottom: 13px;
+}
+
+.product__offer-text {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.product__offer-price {
+  margin: 0;
+
+  text-align: start;
+}
+
+.product__offer-price-value {
+  margin-left: 50px;
+
+  font-size: 60px;
+  line-height: 1.2em;
+
+  &_old {
+    position: relative;
+
+    display: inline-block;
+    margin-left: 0;
+
+    font-size: 24px;
+    line-height: 1.2em;
+
+    vertical-align: 25px;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: $white-color;
+
+      content: '';
+    }
+  }
+}
+
+.product-actions__form {
+  position: relative;
+}
+
+.product-actions__form {
+  height: 49px;
+}
+
+.product-actions__quantity-select {
+  position: absolute;
+  top: 13px;
+  left: 56px;
+}
+
+.product-actions__button {
+  position: absolute;
+  right: 30px;
+
+  padding: 0.6em 1.1em;
+  border: 3px solid $white-color;
+  outline: none;
+}
