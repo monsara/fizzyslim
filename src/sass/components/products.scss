@@ -39,11 +39,11 @@
     }
 
     &::before {
-      top: 636px;
+      top: 550px;
     }
 
     &::after {
-      top: 1323px;
+      top: 1217px;
     }
   }
 
@@ -51,6 +51,14 @@
     &::before,
     &::after {
       width: 785px;
+    }
+
+    &::before {
+      top: 636px;
+    }
+
+    &::after {
+      top: 1305px;
     }
   }
 
@@ -79,13 +87,13 @@
 
   @media (max-width: 599px) {
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 
   @media (max-width: 1169px) and (min-width: 600px) {
     &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 
